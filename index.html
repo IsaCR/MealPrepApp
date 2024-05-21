@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meal Planner</h1>
+    <form id="mealForm">
+        <label for="numPeople">How many people?</label>
+        <input type="number" id="numPeople" name="numPeople" required><br><br>
+
+        <label for="dietStyle">Diet style:</label>
+        <select id="dietStyle" name="dietStyle" required>
+            <option value="Keto">Keto</option>
+            <option value="Mediterranean">Mediterranean</option>
+            <option value="Dash">Dash</option>
+            <option value="Low carb">Low carb</option>
+        </select><br><br>
+
+        <label for="restrictions">Restrictions:</label>
+        <select id="restrictions" name="restrictions">
+            <option value="none">None</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Fat">Fat</option>
+        </select><br><br>
+
+        <label for="preferences">Preferences:</label>
+        <select id="preferences" name="preferences">
+            <option value="none">None</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Fruits">Fruits</option>
+        </select><br><br>
+
+        <label for="numBreakfast">How many breakfasts?</label>
+        <input type="number" id="numBreakfast" name="numBreakfast" required><br><br>
+
+        <label for="numLunch">How many lunches?</label>
+        <input type="number" id="numLunch" name="numLunch" required><br><br>
+
+        <label for="numDinner">How many dinners?</label>
+        <input type="number" id="numDinner" name="numDinner" required><br><br>
+
+        <label for="numSnack">How many snacks?</label>
+        <input type="number" id="numSnack" name="numSnack" required><br><br>
+
+        <button type="submit">Generate Meal Plan</button>
+    </form>
+    <div id="output"></div>
+</body>
+</html>
